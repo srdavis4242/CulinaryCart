@@ -1,7 +1,3 @@
-Of course! Below is a basic template for a `README.md` file for "CulinaryCart" on GitHub:
-
----
-
 # CulinaryCart 🥘🛒
 
 ![CulinaryCart Logo](path_to_logo_image)
