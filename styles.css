@@ -1,16 +1,43 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 20px;
-    background-color: #f4f4f4;
+    background-color: #eef1f6;
 }
 
 .container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #d7e4ed;
+    /* other styles */
 }
 
+button {
+    border-radius: 15px; /* for rounded edges */
+    /* other styles */
+}
+
+textarea {
+    resize: vertical; /* allows vertical resizing */
+    /* other styles */
+}
+
+.highlight-pink {
+    background-color: #eedad7; /* light pink background */
+}
+
+
+button {
+    display: block;
+    background-color: #e6e1e5;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 25px; /* Rounded edges */
+}
+
+button:hover {
+    background-color: #eedad7; /* Light pink on hover */
+}
+
+/* Additional styles for better visuals */
 h1, h2 {
     color: #333;
 }
@@ -21,23 +48,9 @@ label {
     margin-top: 20px;
 }
 
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+.container {
+    background-color: #eef1f6; /* Color from the logo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

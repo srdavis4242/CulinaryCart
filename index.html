@@ -1,62 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CulinaryCart</title>
-    <!-- Link to the Roboto font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css"> 
-    <script src="script.js" defer></script>
-    <style>
-        /* Use Roboto throughout the page */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 40px;
-            background-color: #f9f9f9;
-        }
-
-        input[type="text"] {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            font-size: 16px;
-        }
-
-        button {
-            display: block;
-            background-color: #007BFF;
-            color: #FFFFFF;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            margin-top: 20px; /* Added more space before the button */
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>CulinaryCart</h1>
-    <p>Curate grocery lists from your favorite recipe makers using AI.</p>
-
-    <form>
-        Enter your favorite recipe maker's websites:
-        <input type="text" placeholder="Type as many websites as you want, click enter after each one to add a new one">
-        
-        Describe the recipes you're looking for:
-        <input type="text" placeholder="For example, 5 days worth of dinner recipes for four people that are gluten-free, dairy-free, and low on sugar">
-        
-        <input type="checkbox" checked> Select recipes with overlapping ingredients so I don't waste groceries (i.e.; one recipe calls for 1/2 a bell pepper, find another recipe that uses the other half of it).
-        
-        <button>Generate Recipes and Grocery List</button>
-    </form>
+    <div class="container">
+        <h1>CulinaryCart</h1>
+        <p>Curate grocery lists from your favorite recipe makers using AI.</p>
+        <form>
+            <label for="websites">Enter your favorite recipe maker's websites:</label>
+            <textarea id="websites" placeholder="Type websites, press Enter after each one"></textarea>
+            <label for="description">Describe the recipes you're looking for:</label>
+            <textarea id="description" placeholder="For example, 5 days worth of dinner recipes for four people that are gluten-free, dairy-free, and low on sugar"></textarea>
+            <div class="checkbox-container">
+                <input type="checkbox" id="overlap" checked>
+                <label for="overlap">Select recipes with overlapping ingredients so I don't waste groceries (i.e., one recipe calls for 1/2 a bell pepper, find another recipe that uses the other half of it).</label>
+            </div>
+            <button>Generate Recipes and Grocery List</button>
+        </form>
+    </div>
+    <script src="script.js" defer></script>
 </body>
-
 </html>
